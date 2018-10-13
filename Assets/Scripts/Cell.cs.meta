@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c8e3c3671a0d4714a9860d32fd0d75c7
+timeCreated: 1539321813
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - AliveCell: {fileID: 2100000, guid: 704f523655c1b4140bc374b26bba63bc, type: 2}
+  - DeadCell: {fileID: 2100000, guid: fc7657ff8f15e5d41bd445f8a88e04f4, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

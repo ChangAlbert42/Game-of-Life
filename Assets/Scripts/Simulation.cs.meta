@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ccb947f421dbb864c85e31c1eeb2e51e
+timeCreated: 1539318430
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - ATPrefab: {fileID: 1110992490881502, guid: d8f7bebfa5bf54247a6901035963dce2, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
