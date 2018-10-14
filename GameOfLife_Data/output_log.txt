@@ -15,20 +15,20 @@ Platform assembly: D:\AChangPC\Documents\College\GitHub Projects\Game of Life\Ga
 Loading D:\AChangPC\Documents\College\GitHub Projects\Game of Life\GameOfLife_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: D:\AChangPC\Documents\College\GitHub Projects\Game of Life\GameOfLife_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading D:\AChangPC\Documents\College\GitHub Projects\Game of Life\GameOfLife_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.252 seconds
+- Completed reload, in  0.250 seconds
 Platform assembly: D:\AChangPC\Documents\College\GitHub Projects\Game of Life\GameOfLife_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\AChangPC\Documents\College\GitHub Projects\Game of Life\GameOfLife_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.246378 ms
+UnloadTime: 3.228439 ms
 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 3a40 -> priority: 1 
-  Thread -> id: bd0 -> priority: 1 
-  Thread -> id: 2c20 -> priority: 1 
-  Thread -> id: 18f0 -> priority: 1 
+  Thread -> id: 1ea4 -> priority: 1 
+  Thread -> id: 2ec -> priority: 1 
+  Thread -> id: ff0 -> priority: 1 
+  Thread -> id: a70 -> priority: 1 

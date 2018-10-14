@@ -24,10 +24,14 @@ public class Simulation : MonoBehaviour {
 				cellBoard [x,y] = celltile;
 				celltile.GetComponent<Cell> ().renderMat ();
 			}
-		cellBoard[0,0].GetComponent<Cell> ().setAlive ();
-		cellBoard[0,0].GetComponent<Cell> ().renderMat ();
-		cellBoard[1,0].GetComponent<Cell> ().setAlive ();
-		cellBoard[1,0].GetComponent<Cell> ().renderMat ();
+		cellBoard[2,0].GetComponent<Cell> ().setAlive ();
+		cellBoard[2,0].GetComponent<Cell> ().renderMat ();
+		cellBoard[2,1].GetComponent<Cell> ().setAlive ();
+		cellBoard[2,1].GetComponent<Cell> ().renderMat ();
+		cellBoard[2,2].GetComponent<Cell> ().setAlive ();
+		cellBoard[2,2].GetComponent<Cell> ().renderMat ();
+		cellBoard[1,2].GetComponent<Cell> ().setAlive ();
+		cellBoard[1,2].GetComponent<Cell> ().renderMat ();
 		Debug.Log (returnAliveCount (1, 1));
 	}
 	
@@ -35,10 +39,12 @@ public class Simulation : MonoBehaviour {
 	void FixedUpdate () {
 		for (int y = 0; y < sizeY; y++)
 			for (int x = 0; x < sizeX; x++) {
-				if (returnAliveCount (x, y) == 2 || returnAliveCount (x, y) == 3) {
-
+				if (cellBoard [x, y].GetComponent<Cell> ().returnState() && (returnAliveCount (x, y) == 2 || returnAliveCount (x, y) == 3))
 					cellBoard [x, y].GetComponent<Cell> ().setNSAlive ();
-				}
+				
+				else if (!cellBoard [x, y].GetComponent<Cell> ().returnState() && returnAliveCount (x, y) == 3)
+					cellBoard [x, y].GetComponent<Cell> ().setNSAlive ();
+				
 				else 
 					cellBoard [x, y].GetComponent<Cell> ().setNSDead ();
 			}
@@ -48,7 +54,9 @@ public class Simulation : MonoBehaviour {
 				cellBoard [x, y].GetComponent<Cell> ().stateNS ();
 				cellBoard [x, y].GetComponent<Cell> ().renderMat ();
 			}
-		
+
+
+
 	}
 
 	int returnAliveCount(int xcoord, int ycoord)
